@@ -1,7 +1,7 @@
 package com.chskela.sudoku.domain
 
-enum class Difficulty {
-    EASY,
-    MEDIUM,
-    HARD
+enum class Difficulty(val modifier: Double) {
+    EASY(0.50),
+    MEDIUM(0.44),
+    HARD(0.38)
 }
