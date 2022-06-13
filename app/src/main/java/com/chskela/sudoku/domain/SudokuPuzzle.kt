@@ -11,7 +11,7 @@ data class SudokuPuzzle(
         boundary,
         difficulty
     ).graph,
-    val elapsedTime: Long = 0L
+    var elapsedTime: Long = 0L
 ) : Serializable {
     fun getValue(): LinkedHashMap<Int, LinkedList<SudokuNote>> = graph
 }
